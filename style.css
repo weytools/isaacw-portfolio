@@ -17,3 +17,48 @@
     text-shadow: var(--shadows);
     font-weight: bold;
 }
+
+.skill-li {
+  margin-bottom: .50rem;
+}
+
+/* Info color lightened by X% */
+.bg-info-95l {
+  background-color: #f1fbfd;
+}
+.bg-info-96l {
+  background-color:#f4fcfd;
+}
+.bg-info-98l {
+  background-color: #f9fdfe;
+}
+
+
+
+@media (min-width: 992px) {
+  .w-lg-60 {
+  width: 60% !important;
+  }
+}
+
+.mw-60 {
+  max-width: 60% !important;
+}
+.w-30 {
+  width: 30% !important;
+}
+.w-35 {
+  width: 35% !important;
+}
+.w-40 {
+  width: 40% !important;
+}
+.w-45 {
+  width: 45% !important;
+}
+.w-60 {
+  width: 60% !important;
+}
+.w-65 {
+  width: 65% !important;
+}
