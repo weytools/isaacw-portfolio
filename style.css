@@ -1,0 +1,19 @@
+:root {
+    --shadows: 2px 1px 0px #f012be;
+    --accent: #01ff70;
+    --bg: #001f3f;
+    --fuchsia: #f012be;
+    --yellow: #ffdc00;
+    --blue: #0074d9;
+    --navy: #001f3f;
+    --teal: #39CCCC;
+    --maroon: #85144b;
+    --light: #DDD;
+    --blue-grad: linear-gradient(var(--blue) 0%, var(--navy));
+  }
+
+.logo-text {
+    color: var(--light);
+    text-shadow: var(--shadows);
+    font-weight: bold;
+}
