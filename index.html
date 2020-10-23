@@ -15,6 +15,11 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
         crossorigin="anonymous">
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/141144e1d7.js" 
+    crossorigin="anonymous"></script>
+
+
 
     <title>Isaac Weymouth Portfolio</title>
   </head>
@@ -27,18 +32,21 @@
         sticky-top
         navbar-expand-lg 
         navbar-light 
-        bg-light" id="topNav">
-    <div class="container">
+        bg-light
+        d-flex flex-wrap
+        pb-0" id="topNav">
+        <div class="container">
 
         <!-- Brand -->
-        <span class="navbar-brand 
-        logo-text 
-        text-light
-        flex-grow-1 
-        text-lg-right 
-        mr-lg-5">
-            iw
-        </span>
+            <span class="navbar-brand 
+            logo-text 
+            text-light
+            flex-grow-1 
+            text-lg-right 
+            mr-lg-5 ml-4 mb-1"
+            id="nav-brand">
+                iw
+            </span>
         
         <!-- Menu Button -->
         <button 
@@ -72,14 +80,25 @@
                     <a class="nav-link mx-2" href="#resumeSection">Resume.PDF</a>
             </div>
         
-    </div>
+        </div>
+        <br>
+        <div class="w-100">
+            <div class="row">
+                <div class="col-6 bg-info pt-1"></div>
+                <div class="col-4 bg-danger"></div>
+                <div class="col-2 bg-warning"></div>
+            </div>
+        </div>
     </nav>
+    <!-- nav bottom border color -->
+
     
     <!-- SECTION: WELCOME -->
-    <section id="welcome">
+    <section id="welcome" data-midnight="one">
         <div class="jumbotron ">
                 <h2 class="display-3">Isaac Weymouth</h2>
-                <p class="lead">Enterprise Software & Web Developer</p>
+                <p class="lead">Web Developer & Enterprise Software Engineer</p>
+                <p class="lead"></p>
                 <div class="container-fluid h-1 px-4">
                     <div class="row">
                         <div class="col-6 bg-info p-3"></div>
@@ -87,88 +106,93 @@
                         <div class="col-2 bg-warning"></div>
                     </div>
                 </div>
-                <!--<hr class="my-4">
-                <p class="text-muted px-1 small text-center">business fluent, detail conscious, autodidact</p>
-                 <div class="container">
-                    <div class="row">
-                        <div class="col">business fluent</div>
-                        <div class="col">detail conscious</div>
-                        <div class="col">autodidactic</div>
-                    </div>
-                </div> -->
-
         </div>
 
     </section>
 
     <!-- SECTION: ABOUT -->
-    <section class="clearfix p-4 mb-5" id="about">
+    <section class="clearfix p-4 mb-5" id="about" data-midnight="two">
         <div class="container">
-            
-            <h2 class="display-4">About me</h2>
-            <p class="lead mb-5">I enjoy finding problems and generating answers. </p>
+            <div class="col-lg-6 bg-info text-white px-4 rounded-lg">
+            <h2 class="display-2 pt-2">About me</h2>
+            <p class="lead mb-5 pb-3">Finding problems and generating answers. </p>
+        </div>
             <!-- Professional About -->
             
             <!-- <img src="images/ukesquare.jpg" class="img-fluid rounded-lg float-right w-35 ml-3 p-3" alt="me playing uke"> -->
-            <h3 class="mb-3 text-muted">Professional</h3>
-                <p>Excited by beautiful web dev. Trained in <code>HTML, CSS, JavaScript, React.js, jQuery, Bootstrap</code></p>
-                <p>Passionate in finding digital solutions for business needs. Trained in <code>C#, SQL, .NET, WPF, VBA</code></p>
-                <p>Never shy to learn a new program, framework, or language: my favorite experiences are new ones. I've found expanding new knowledge always benefits my existing skillset, adding context and allegory.</p>
-            <h5 class="text-muted mt-4">Methodology</h5>
-                <p>I approach each challenge/project with 3 scalable phases:
-                    <div class="container">
-                        <dl class="row">
-                        <dt class="col-sm-2">Preparation</dt>
-                            <dd class="col-sm-10">Identifying a solution path; learning key procedures and phrases along that path</dd>
-                        <dt class="col-sm-2">Extraction</dt>
-                            <dd class="col-sm-10">Detailed research for each step; expert consultation</dd>
-                        <dt class="col-sm-2">Execution</dt>
-                            <dd class="col-sm-10">Plan and details in place: project creation or execution.</dd>
-                    </dl>
-                </div>
-                </p>
-                <p>For my exhaustive skillset, please see my <a class="">resume.</a></p>
+            <h3 class="display-4 mb-3 text-muted">Professionally</h3>
+                <p class="lead">Excited by beautiful web dev. Trained in <code>HTML, CSS, JavaScript, React.js, jQuery, Bootstrap</code></p>
+                <p class="lead">Passionate in finding digital solutions for business needs. Trained in <code>C#, SQL, .NET, WPF, VBA</code></p>
+                
+                <p class="small mt-5">For my exhaustive skillset, please see my <a class="">resume.</a></p>
             
             <hr class="m-4 mb-4">
             <!-- Personal About -->
             <img src="images/ukesquare.jpg" class="img-fluid rounded-lg float-right w-35 ml-2
                 float-lg-left ml-lg-0 mr-lg-3 p-lg-3" alt="me playing uke">
-            <h3 class="mb-3 text-muted">Personal</h3>
-                <p>I own and operate a local tech tool and website shop: <a href="https://www.weytools.net" target="_blank"><strong><em>weytools</em></strong></a>.</p>
-                <p>I host a weekly music group for toddlers: <strong><em>Music with Mr. Isaac</em></strong></p>
-                <p>I am an avid DIY'er and maker:
-                    <div class="container float-left w-lg-60">
-                        <ul class="list-unstyled small">
-                        <li class="skill-li"><em>HVAC:</em> I've installed an entire <a class="">gas fired, hot air furnace</a>.</li>
-                        <hr class="m-0 mb-1">
-                        <li class="skill-li"><em>CARPENTRY:</em> I've built <a class="">shelves, sandboxes and swingsets</a>.</li>
-                        <hr class="m-0 mb-1">
-                        <li class="skill-li"><em>APPLIANCES:</em> I've repaired <a class="">lawn mowers, dishwashers, and ranges</a>.</li>
-                        <hr class="m-0 mb-1">
-                        <li class="skill-li"><em>WOODWORKING:</em> I build, stain and finish <a class="">furniture</a> and I've restored antique <a class="">wood windows</a>.</li>
-                        <hr class="m-0 mb-1">
-                        <li class="skill-li"><em>ELECTRICAL:</em> I install my own <a class="">outlets and lights</a> and repair damaged ones.</li>
-                        <hr class="m-0 mb-1">
-                        <li class="skill-li"><em>PLUMBING:</em> I plumb my own <a class="">faucets and drains</a>.</li>
-                        <hr class="m-0 mb-1">
-                        <li class="skill-li"><em>MECHANICAL:</em> I perform my own <a class="">automotive repairs</a> and have replaced a <a class="">car windshield</a>.</li>
-                    </ul>
-                </div>
-                </p>
+            <h3 class="display-4 mb-3 text-muted">Personally</h3>
+                <p class="lead">Own and operate local tech shop: <a href="https://www.weytools.net" target="_blank"><strong><em>weytools</em></strong></a>.</p>
+                <p class="lead">Host a weekly music group for toddlers: <code>Music with Mr. Isaac</code></p>
+                <p class="lead">DIY fanatic with major projects in: <code>HVAC, Carpentry, Electrical, Plumbing, Mechanical, Appliance Repair</code></p>
+                <p class="small mt-5">For a gallery of personal projects, please see my <a class="">showroom.</a></p>
                 </div>
     </section>
 
     <!-- SECTION: PROJECTS -->
-    <section class="bg-info-96l py-4 my-5" id="projects">
-        <div class="container ">
+    <section class="bg-light 
+    border-top border-bottom border-info
+    py-4 my-5" id="projects" data-midnight="three">
+        <div class="container">
                 <!-- Header -->
-                <h2 class="display-4">Project list</h2>
-                <p class="lead mb-5">A collection of past works</p>
+            <div class="col-lg-6 bg-warning text-white px-4 rounded-lg">
+                <h2 class="display-2 pt-2">Project list</h2>
+                <p class="lead mb-5 pb-3">A collection of past works</p>
+            </div>
                 <!-- Content -->
                 <div class="row">
-                <div class="col-lg-4">
-                    <!-- furnace install doc -->
+                    <!-- COLUMN 1 -->
+                <div class="col-lg-6">
+                    <!-- PROJECT: old portfolio -->
                     <div class="card">
+                        <div class="card-header text-muted py-2">Website</div>
+                        <div class="card-body">
+                            <img 
+                                src="images/old-portfolio.png" 
+                                class="card-img-top border border-secondary rounded mb-3" 
+                                alt="animated screenshot">
+                            <h5 class="card-title">
+                                Old portfolio
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted mb-3">
+                                Single page site
+                            </h6>
+                            <p class="card-text">
+                                Stylized personal portfolio hosting older HTML & CSS projects
+                            </p>
+                            <p class="card-text">
+                                Vanilla CSS3 & HTML5 featuring <em class="text-info">CSS Grid, </em> and <em class="text-info">CSS variables</em>.
+                            </p>
+                            <hr>
+                            <div class="d-flex justify-content-start">
+                                <a href="https://cdpn.io/weytools/debug/OJNXgeY/LDkmdENJRDaA" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-globe mr-2"></i>View Online
+                                </a>
+                                <span class="px-2"></span>
+                                <a href="https://codepen.io/weytools/pen/OJNXgeY" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fab fa-codepen mr-2"></i>View source code
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- END PROJECT -->
+
+                </div>
+                <!-- COLUMN 2 -->
+                <div class="col-lg-6">
+                    <!-- PROJECT: furnace install doc -->
+                    <div class="card">
+                        <div class="card-header text-muted py-2">Website</div>
                         <div class="card-body">
                             <img 
                                 src="images/furnace-doc-anim.gif" 
@@ -186,24 +210,21 @@
                             <p class="card-text">
                                 Vanilla CSS3 & HTML5 featuring <em class="text-info">flexbox, media queries,</em> and <em class="text-info">anchor links</em>.
                             </p>
-                            <a href="https://codepen.io/weytools/full/yLOOWXQ" target="_blank" class="btn btn-primary">
-                                View Online
-                            </a>
-                            <a href="https://codepen.io/weytools/pen/yLOOWXQ" target="_blank" class="btn btn-secondary">
-                                View Code on CodePen
-                            </a>
+                            <hr>
+                            <div class="d-flex justify-content-start">
+                                <a href="https://cdpn.io/weytools/debug/yLOOWXQ/dGrXWKvbpXRM" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-globe mr-2"></i>View Online
+                                </a>
+                                <span class="px-2"></span>
+                                <a href="https://codepen.io/weytools/pen/yLOOWXQ" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fab fa-codepen mr-2"></i>View source code
+                                </a>
+                            </div>
                         </div>
-                        <div class="card-footer text-muted small py-2">
-                            Projects > Websites
-                          </div>
+                        
                     </div>
-                    <!-- end furnace -->
-
+                    <!-- END PROJECT -->
                 </div>
-                <div class="col-lg-4">
-
-                </div>
-                <div class="col-lg-4"></div>
             </div>
         </div>
     </section>
@@ -223,6 +244,12 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <!-- Bootstrap JS   -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-     
+    <!-- Midnight.JS (Navbar morph) -->
+    <!-- <script src="js/midnight.jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav-brand').midnight();
+            });
+            </script> -->
     </body>
 </html>
