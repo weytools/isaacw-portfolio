@@ -76,8 +76,7 @@
                         </div>
                     </div>
                     <!-- end portfolio dropdown -->
-
-                    <a class="nav-link mx-2" href="#resumeSection">Resume.PDF</a>
+                    <a class="nav-link mx-2" href="Resume-Isaac-Weymouth.pdf" target="_blank">Resume.PDF</a>
             </div>
         
         </div>
@@ -95,17 +94,28 @@
     
     <!-- SECTION: WELCOME -->
     <section id="welcome" data-midnight="one">
-        <div class="jumbotron ">
-                <h2 class="display-3">Isaac Weymouth</h2>
-                <p class="lead">Web Developer & Enterprise Software Engineer</p>
-                <p class="lead"></p>
-                <div class="container-fluid h-1 px-4">
+        <div class="jumbotron">
+            <div class="text-center">
+                <h2 class="display-3 section-header-light">Isaac Weymouth</h2>
+                <p class="lead mb-1">Web Developer & Enterprise Software Engineer</p>
+                <p class="">
+                    <ul class="list-inline lead text-dark">
+                        <li class="list-inline-item"><a href="mailto:isweymouth@gmail.com" class="btn btn-outline-secondary"><i class="far fa-envelope mr-2"></i> Email me</a></li>
+                        <li class="list-inline-item"></li>
+                        <li class="list-inline-item"><a href="tel:207-577-7318" class="btn btn-outline-secondary"><i class="fas fa-mobile-alt mr-2"></i> Call me</a></li>
+                    </ul>
+                </p>
+            </div>
+
+                <div class="container-fluid px-4 mt-5">
                     <div class="row">
-                        <div class="col-6 bg-info p-3"></div>
-                        <div class="col-4 bg-danger"></div>
-                        <div class="col-2 bg-warning"></div>
+                        <div class="col-6 bg-info p-3 "></div>
+                        <div class="col-4 bg-danger "></div>
+                        <div class="col-2 bg-warning "></div>
                     </div>
                 </div>
+
+
         </div>
 
     </section>
@@ -113,29 +123,34 @@
     <!-- SECTION: ABOUT -->
     <section class="clearfix p-4 mb-5" id="about" data-midnight="two">
         <div class="container">
-            <div class="col-lg-6 bg-info text-white px-4 rounded-lg">
-            <h2 class="display-2 pt-2">About me</h2>
-            <p class="lead mb-5 pb-3">Finding problems and generating answers. </p>
-        </div>
+            <div class="text-info text-center">
+                <h2 class="display-2 pt-2 section-header-light">About me</h2>
+                <p class="lead mb-5 pb-3"><em>Finding problems and generating answers. </em></p>
+            </div>
             <!-- Professional About -->
-            
-            <!-- <img src="images/ukesquare.jpg" class="img-fluid rounded-lg float-right w-35 ml-3 p-3" alt="me playing uke"> -->
             <h3 class="display-4 mb-3 text-muted">Professionally</h3>
                 <p class="lead">Excited by beautiful web dev. Trained in <code>HTML, CSS, JavaScript, React.js, jQuery, Bootstrap</code></p>
-                <p class="lead">Passionate in finding digital solutions for business needs. Trained in <code>C#, SQL, .NET, WPF, VBA</code></p>
+                <p class="lead">Passionate about creating digital business solutions. Trained in <code>C#, SQL, .NET, WPF, VBA</code></p>
                 
-                <p class="small mt-5">For my exhaustive skillset, please see my <a class="">resume.</a></p>
+                <p class="small mt-5">For my exhaustive skillset, please see my <a href="Resume-Isaac-Weymouth.pdf" target="_blank">resume.</a></p>
             
             <hr class="m-4 mb-4">
             <!-- Personal About -->
-            <img src="images/ukesquare.jpg" class="img-fluid rounded-lg float-right w-35 ml-2
-                float-lg-left ml-lg-0 mr-lg-3 p-lg-3" alt="me playing uke">
-            <h3 class="display-4 mb-3 text-muted">Personally</h3>
-                <p class="lead">Own and operate local tech shop: <a href="https://www.weytools.net" target="_blank"><strong><em>weytools</em></strong></a>.</p>
-                <p class="lead">Host a weekly music group for toddlers: <code>Music with Mr. Isaac</code></p>
-                <p class="lead">DIY fanatic with major projects in: <code>HVAC, Carpentry, Electrical, Plumbing, Mechanical, Appliance Repair</code></p>
-                <p class="small mt-5">For a gallery of personal projects, please see my <a class="">showroom.</a></p>
+            <div class="row">
+                <div class="col-lg-8 order-lg-2 mb-4">
+                    <h3 class="display-4 mb-3 text-muted">Personally</h3>
+                    <p class="lead">Run the tech shop <a href="https://www.weytools.net" target="_blank"><strong><em>weytools</em></strong></a> and host a weekly toddler music group <code>Music with Mr. Isaac</code></p>
+                    <p class="lead"></p>
+                    <p class="lead">DIY fanatic with major projects in <code>HVAC, Carpentry, Electrical, Plumbing, Mechanical, Appliance Repair</code></p>
+                    <p class="small mt-5">For a gallery of personal projects, please see my <a class="">showroom.</a></p>
                 </div>
+                <div class="col-2 d-lg-none"></div>
+                <div class="col-8 col-lg-4 order-lg-1">
+                    <img src="images/ukesquarebw.jpg" class="img-fluid rounded-lg shadow" alt="me playing uke">
+                </div>
+                <div class="col-2 d-lg-none"></div>
+            </div>
+        </div>
     </section>
 
     <!-- SECTION: PROJECTS -->
@@ -144,16 +159,84 @@
     py-4 my-5" id="projects" data-midnight="three">
         <div class="container">
                 <!-- Header -->
-            <div class="col-lg-6 bg-warning text-white px-4 rounded-lg">
-                <h2 class="display-2 pt-2">Project list</h2>
+            <div class="text-warning px-4 rounded-lg text-center">
+                <h2 class="display-2 pt-2 section-header-light">Project list</h2>
                 <p class="lead mb-5 pb-3">A collection of past works</p>
             </div>
                 <!-- Content -->
-                <div class="row">
-                    <!-- COLUMN 1 -->
-                <div class="col-lg-6">
+                <div class="d-flex flex-wrap">
+                    <!-- PROJECT: urban leaf -->
+                    <div class="card shadow mw-lg-45 m-3">
+                        <div class="card-header text-muted py-2">Website</div>
+                        <div class="card-body">
+                            <img 
+                                src="images/urban-leaf.png" 
+                                class="card-img-top border border-secondary rounded mb-3" 
+                                alt="animated screenshot">
+                            <h5 class="card-title">
+                                Urban Leaf
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted mb-3">
+                                Company site
+                            </h6>
+                            <p class="card-text">
+                                Full company site with e-commerce features
+                            </p>
+                            <p class="card-text">
+                                Featuring <em class="text-info">full e-commerce, live inventory</em>, </em> and <em class="text-info">Google Maps API</em>.
+                            </p>
+                            <hr>
+                            <div class="d-flex justify-content-start">
+                                <a href="https://urbanleafmaine.com/" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-globe mr-2"></i>View Online
+                                </a>
+                                <span class="px-2"></span>
+                                <a href="#" target="_blank" class="btn btn-outline-secondary disabled" aria-disabled="true">
+                                    <i class="far fa-times-circle mr-2"></i>Private source code
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- END PROJECT -->
+
+                                        <!-- PROJECT: vcore life -->
+                                        <div class="card shadow mw-lg-45 m-3">
+                                            <div class="card-header text-muted py-2">Website</div>
+                                            <div class="card-body">
+                                                <img 
+                                                    src="images/vcore.png" 
+                                                    class="card-img-top border border-secondary rounded mb-3" 
+                                                    alt="animated screenshot">
+                                                <h5 class="card-title">
+                                                    VCore Life
+                                                </h5>
+                                                <h6 class="card-subtitle mb-2 text-muted mb-3">
+                                                    Blog
+                                                </h6>
+                                                <p class="card-text">
+                                                    Modern design blog with curated copy
+                                                </p>
+                                                <p class="card-text">
+                                                    WordPress blog featuring a <em class="text-info">custom theme</em>, </em> and <em class="text-info">responsive layout</em>.
+                                                </p>
+                                                <hr>
+                                                <div class="d-flex justify-content-start">
+                                                    <a href="https://www.vcorelife.com/" target="_blank" class="btn btn-primary">
+                                                        <i class="fas fa-globe mr-2"></i>View Online
+                                                    </a>
+                                                    <span class="px-2"></span>
+                                                    <a href="#" target="_blank" class="btn btn-outline-secondary disabled" aria-disabled="true">
+                                                        <i class="far fa-times-circle mr-2"></i>Private source code
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- END PROJECT -->
+
                     <!-- PROJECT: old portfolio -->
-                    <div class="card">
+                    <div class="card shadow mw-lg-45 m-3">
                         <div class="card-header text-muted py-2">Website</div>
                         <div class="card-body">
                             <img 
@@ -170,11 +253,11 @@
                                 Stylized personal portfolio hosting older HTML & CSS projects
                             </p>
                             <p class="card-text">
-                                Vanilla CSS3 & HTML5 featuring <em class="text-info">CSS Grid, </em> and <em class="text-info">CSS variables</em>.
+                                Vanilla CSS & HTML featuring <em class="text-info">CSS Grid, </em> and <em class="text-info">CSS variables</em>.
                             </p>
                             <hr>
                             <div class="d-flex justify-content-start">
-                                <a href="https://cdpn.io/weytools/debug/OJNXgeY/LDkmdENJRDaA" target="_blank" class="btn btn-primary">
+                                <a href="https://codepen.io/weytools/full/OJNXgeY" target="_blank" class="btn btn-primary">
                                     <i class="fas fa-globe mr-2"></i>View Online
                                 </a>
                                 <span class="px-2"></span>
@@ -186,16 +269,12 @@
                         
                     </div>
                     <!-- END PROJECT -->
-
-                </div>
-                <!-- COLUMN 2 -->
-                <div class="col-lg-6">
                     <!-- PROJECT: furnace install doc -->
-                    <div class="card">
+                    <div class="card shadow mw-lg-45 m-3" >
                         <div class="card-header text-muted py-2">Website</div>
                         <div class="card-body">
                             <img 
-                                src="images/furnace-doc-anim.gif" 
+                                src="images/furnace-doc.png" 
                                 class="card-img-top border border-secondary rounded mb-3" 
                                 alt="animated screenshot">
                             <h5 class="card-title">
@@ -208,11 +287,11 @@
                                 Contains compiled notes from personal HVAC install project.
                             </p>
                             <p class="card-text">
-                                Vanilla CSS3 & HTML5 featuring <em class="text-info">flexbox, media queries,</em> and <em class="text-info">anchor links</em>.
+                                Vanilla CSS & HTML featuring <em class="text-info">flexbox, media queries,</em> and <em class="text-info">anchor links</em>.
                             </p>
                             <hr>
                             <div class="d-flex justify-content-start">
-                                <a href="https://cdpn.io/weytools/debug/yLOOWXQ/dGrXWKvbpXRM" target="_blank" class="btn btn-primary">
+                                <a href="https://codepen.io/weytools/full/yLOOWXQ" target="_blank" class="btn btn-primary">
                                     <i class="fas fa-globe mr-2"></i>View Online
                                 </a>
                                 <span class="px-2"></span>
@@ -224,7 +303,6 @@
                         
                     </div>
                     <!-- END PROJECT -->
-                </div>
             </div>
         </div>
     </section>
