@@ -17,12 +17,39 @@
     text-shadow: var(--shadows);
     font-weight: bold;
 }
-.logo-text {
-  color: var(--light);
-  text-shadow: var(--shadows);
-  font-weight: bold;
+
+.section-header{
+  text-shadow: 
+  2px 2px 0px #6c757d;
 }
-/* MIDNIGHT.JS TESTS */
+.section-header-light{
+  text-shadow: 
+  2px 2px 0px #adb5bd;
+}
+
+/* BAR ANIMATION */
+@keyframes color-bar-blue{
+  0% { 
+    width: 50%;
+  }
+  50% {
+    width: 100%;
+  }
+  51% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.animated-bar{
+  width: 50%;
+  animation: color-bar-blue 2s ease-in-out;
+}
+
+/*  #f012be */
+/* MIDNIGHT.JS TESTS
 .midnightHeader.default {
   color: var(--light);
   text-shadow: var(--shadows);
@@ -42,10 +69,15 @@
   color: var(--yellow);
   text-shadow: var(--shadows);
   font-weight: bold;
-}
+} */
 
 .skill-li {
   margin-bottom: .50rem;
+}
+
+.small90 {
+  font-size: 90% !important;
+  font-weight: 400;
 }
 
 .pink-inline {
@@ -73,6 +105,9 @@
 @media (min-width: 992px) {
   .w-lg-60 {
   width: 60% !important;
+  }
+  .mw-lg-45 {
+    max-width: 45% !important;
   }
 }
 
