@@ -6,22 +6,14 @@
     <meta name="viewport" 
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" 
-        type="text/css"
-        href="style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
-        crossorigin="anonymous">
-    <!-- FontAwesome JS -->
-    <script src="https://kit.fontawesome.com/141144e1d7.js" 
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap + Customs -->
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/style.css">
 
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/141144e1d7.js" crossorigin="anonymous"></script>
 
-
-    <title>Isaac Weymouth - React Projects</title>
+    <title>Cat Simulator - React.js</title>
   </head>
   
 <body>
@@ -31,10 +23,10 @@
     <nav class="navbar 
         sticky-top
         navbar-expand 
-        navbar-light 
-        bg-light
+        navbar-dark 
+        bg-pasdark
         d-flex flex-wrap
-        pb-0" id="topNav">
+        pb-0 pt-1" id="topNav">
         <div class="container">
 
         <!-- Brand -->
@@ -50,7 +42,7 @@
         
         <!-- Nav Links -->
             <div class="navbar-nav collapse navbar-collapse" id="navbarNav">
-                <a class="nav-link  mx-2" href="./index.html"><i class="fas fa-long-arrow-alt-left"></i> Back to Homepage</a>
+                <a class="nav-link  active mx-2" href="./index.html"><i class="fas fa-long-arrow-alt-left"></i> Back to Homepage</a>
             </div>
         
         </div>
@@ -67,7 +59,7 @@
     <section>
         <div class="pt-4" id="root"></div>
 
-        <!-- minified react scripts -->
+        <!-- chunked react scripts -->
         <script src="./react-dist/runtime-main.7b6a1499.js"></script>
         <script src="./react-dist/2.966e6ca1.chunk.js"></script>
         <script src="./react-dist/main.796bf927.chunk.js"></script>
