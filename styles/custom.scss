@@ -1,0 +1,95 @@
+// #region Custom Colors
+// My Pastels
+$pasred:    #fea3aa;
+$pasorange: #f8b88b;
+$pasyellow: #faf884;
+$pasgreen:  #baed91;
+$pasblue:   #b2cefe;
+$paspurp:   #f2a2e8;
+$pasdark:   #383e56;
+
+// Cactus Colors
+$cactusred:     #ff5851;
+$cactuslight:   #f8f8f8;
+$cactusdark:    #1c1b20;
+$cactusdusk:    #4c4a57;
+$cactusmed:     #606060;
+
+// Dracula Colors
+$dracdark:  #282a36;
+$dracdusk:  #44475a;
+$draclight: #f8f8f2;
+$dracblue:  #6272a4;
+$draccyan:  #8be9fd;
+$dracgreen: #50fa7b;
+$dracorange:#ffb86c;
+$dracpink:  #ff79c6;
+$dracpurp:  #bd93f9;
+$dracred:   #ff5555;
+$dracyellow:#f1fa8c;
+
+// "dracdark":     $dracdark,
+// "dracdusk":     $dracdusk,
+// "draclight":    $draclight,
+// "dracblue":     $dracblue,
+// "draccyan":     $draccyan,
+// "dracgreen":    $dracgreen,
+// "dracorange":   $dracorange,
+// "dracpink":     $dracpink,
+// "dracpurp":     $dracpurp,
+// "dracred":      $dracred,
+// "dracyellow":   $dracyellow
+
+$theme-colors: (
+    "pasred":       $pasred,
+    "pasorange":    $pasorange,
+    "pasyellow":    $pasyellow,
+    "pasgreen":     $pasgreen,
+    "pasblue":      $pasblue,
+    "paspurp":      $paspurp,
+    "pasdark":      $pasdark,
+    "cactusred":    $cactusred,
+    "cactuslight":  $cactuslight,
+    "cactusdark":   $cactusdark,
+    "cactusdusk":   $cactusdusk,
+    "cactusmed":    $cactusmed
+);
+// #endregion Custom Colors
+
+// #region Custom Type
+$display1-weight:             400;
+$display2-weight:             400;
+$display3-weight:             400;
+$display5-weight:             300;
+
+$display5-size:               2.5rem;
+
+.display-1 {
+    z-index: 10;
+    position: relative;
+}
+.display-2 {
+    z-index: 10;
+    position: relative;
+}
+.display-3 {
+    z-index: 10;
+    position: relative;
+}
+.display-4 {
+    z-index: 10;
+    position: relative;
+}
+.display-5 {
+    font-size: $display5-size;
+    font-weight: $display5-weight;
+    line-height: 1.2;
+    z-index: 10;
+    position: relative;
+}
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+// #endregion Custom Type
+
+@import "../node_modules/bootstrap/scss/bootstrap";
