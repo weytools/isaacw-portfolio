@@ -1,3 +1,0 @@
-- Compile Sass
-- Commit changes to GitHub repo
-- Tell Netlify to update
