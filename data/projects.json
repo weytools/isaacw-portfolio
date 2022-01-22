@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Cat Simulator",
+        "image": "images/react-v2-small.png",
+        "imageAlt" : "project screenshot",
+        "subtitle": "React app",
+        "description": "Randomly generated cats with depleting needs and button interactions!",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>Launch app",
+                "ref": "./react.html"
+            },
+            {
+                "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
+                "ref": "https://github.com/weytools/react-cat-sim"
+            }
+
+        ],
+        "footer": "React.js, JSX, AJAX, Boostrap, Sass"
+    },
+    {
+        "title": "Urban Leaf",
+        "image": "images/urban-leaf.png",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Company site",
+        "description": "Company site with full e-commerce functionality!",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
+                "ref": "https://urbanleafmaine.com/"
+            },
+            {
+                "label": "<i class=\"far fa-times-circle mr-2\"></i>Private source",
+                "ref": "#",
+                "isDisabled": true
+            }
+
+        ],
+        "footer": "ShopKeep, Authorize.Net, HTML, CSS"
+    }, 
+    {
+        "title": "Product Database & UI",
+        "image": "images/blits/cover-pic.jpg",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Desktop App",
+        "description": "Normalized database and GUI, replacing handwritten audit system in a manufacturing plant! \nIncludes extra tools and custom calculators.",
+        "buttons": [
+            {
+                "isModal": true,
+                "modalTarget": "#blitsModal",
+                "label": "<i class=\"fas fa-images mr-2\"></i>Image Gallery"
+            },
+            {
+                "label": "<i class=\"fas fa-video mr-2\"></i>Training Video",
+                "ref": "https://youtu.be/7Pq6wX2p1J8"
+            }
+
+        ],
+        "footer": "WinForms, VB, SQL, WinAPI, Batch"
+    }
+]
