@@ -57,5 +57,25 @@
 
         ],
         "footer": "WinForms, VB, SQL, WinAPI, Batch"
+    },
+    {
+        "title": "Packing Slip Barcoder",
+        "image": "images/barcoder-black.jpg",
+        "imageAlt" : "project screenshot",
+        "subtitle": " Desktop App",
+        "description": "Lightweight utility for barcoding user input into an existing PDF",
+        "buttons": [
+            {
+                "isModal": true,
+                "modalTarget": "#barcoderModal",
+                "label": "<i class=\"fas fa-images mr-2\"></i>Image Gallery"
+            },
+            {
+                "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
+                "ref": "https://github.com/weytools/Lane-Pack-Barcoder"
+            }
+
+        ],
+        "footer": ".NET, C#, WPF, XAML, iText Library"
     }
 ]

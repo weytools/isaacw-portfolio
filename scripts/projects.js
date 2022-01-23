@@ -1,4 +1,4 @@
-async function populate() {
+async function getProjects() {
     const request = new Request('./data/projects.json');
   
     const response = await fetch(request);
@@ -11,6 +11,7 @@ function populateProjects(projects){
     const projectContainer = document.querySelector('#project-container');
     for (const project of projects) {
         let projectEl = document.createElement('div');
+        // <div class="card shadow mw-lg-45 m-3">
         projectEl.classList.add("card", "shadow", "mw-lg-45", "m-3");
         let output = `
             <div class="card-body d-flex flex-column">
@@ -44,3 +45,5 @@ function populateProjects(projects){
         projectContainer.appendChild(projectEl);
     }
 }
+
+export default getProjects;
