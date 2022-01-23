@@ -10,6 +10,7 @@ async function getProjects() {
 function populateProjects(projects){
     const projectContainer = document.querySelector('#project-container');
     for (const project of projects) {
+        if (project.isDisabled) continue;
         let projectEl = document.createElement('div');
         // <div class="card shadow mw-lg-45 m-3">
         projectEl.classList.add("card", "shadow", "mw-lg-45", "m-3");

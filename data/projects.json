@@ -1,9 +1,28 @@
 [
     {
+        "title": "Animated Infographic",
+        "image": "images/projects/craziest.png",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Website",
+        "description": "Interactive infographic with attention grabbing custom animations! \nHandcoded based on <a href=\"https://www.emburse.com/assets/pdfs/21.emb.cmk_craziestexpenses_infographic-fa_outlined.pdf\" target=\"_blank\">static infographic</a> design",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
+                "ref": "https://www.emburse.com/learn/craziest-expenses-2021"
+            },
+            {
+                "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
+                "ref": "https://github.com/weytools/Craziest-Expenses-2021"
+            }
+
+        ],
+        "footer": "anime.js, currency.js, Vanilla JavaScript, SVG, CSS"
+    }, 
+    {
         "title": "Cat Simulator",
         "image": "images/react-v2-small.png",
         "imageAlt" : "project screenshot",
-        "subtitle": "React app",
+        "subtitle": "React App",
         "description": "Randomly generated cats with depleting needs and button interactions!",
         "buttons": [
             {
@@ -19,6 +38,7 @@
         "footer": "React.js, JSX, AJAX, Boostrap, Sass"
     },
     {
+        "isDisabled": true,
         "title": "Urban Leaf",
         "image": "images/urban-leaf.png",
         "imageAlt" : "project screenshot",

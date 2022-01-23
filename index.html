@@ -36,8 +36,7 @@
           sticky-top
           navbar-expand-lg 
           navbar-dark 
-          bg-pasdark
-          d-flex flex-wrap
+          bg-pasdark flex-wrap
           pb-0 pt-1" id="topNav">
   
           <!-- Brand -->
@@ -46,7 +45,7 @@
               text-light
               flex-grow-1 
               text-lg-right 
-              mr-lg-5 ml-4 mb-1"
+              mr-lg-5 ml-4 mb-1 d-lg-none"
               id="nav-brand">
                   iw
               </span>
@@ -65,12 +64,20 @@
   
           <!-- Nav Links -->
           
-              <div class="navbar-nav collapse navbar-collapse pl-lg-5 ml-lg-5" id="navbarNav">
-                      <a class="nav-link  mx-2 active" href="#welcome">Home</a>
-                      <a class="nav-link  mx-2" href="#about">About</a>
+              <div class="navbar-nav collapse navbar-collapse pl-lg-5 ml-lg-5 justify-content-center" id="navbarNav">
+                <span class="navbar-brand 
+                logo-text 
+                text-light
+                text-lg-right 
+                mr-lg-5 ml-4 mb-1 d-none d-lg-block"
+                id="nav-brand">
+                    iw
+                </span>
+                      <a class="nav-link mx-2 ml-lg-5 active" href="#welcome">Home</a>
+                      <a class="nav-link mx-2" href="#about">About</a>
                       <!-- portfolio dropdown -->
-                      <div class="nav-item dropdown">
-                          <a class="nav-link  mx-2 dropdown-toggle" href="#portfolioSection" id="portfolioDropdown"
+                      <div class="nav-item dropdown mr-lg-5">
+                          <a class="nav-link  mx-2 dropdown-toggle " href="#portfolioSection" id="portfolioDropdown"
                           role="button" data-toggle="dropdown" aria-haspopup="true">Projects</a>
                           <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
                               <a class="dropdown-item" href="#web">Websites</a>
@@ -80,7 +87,7 @@
                       </div>
                       <!-- end portfolio dropdown -->
                       <!-- source button spacer -->
-                      <a class="btn btn-pasyellow mx-3 py-1 mb-2 mb-lg-0 cta-button" href="https://github.com/weytools/isaacw-portfolio" target="_blank"><i class="fab fa-github mr-2"></i> View Page Source!</a>
+                      <a class="btn btn-pasyellow mx-3 py-1 mb-2 mb-lg-0" href="https://github.com/weytools/isaacw-portfolio" target="_blank"><i class="fab fa-github mr-2"></i> View Page Source!</a>
               </div>
           
           <br>
