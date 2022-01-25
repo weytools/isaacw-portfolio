@@ -23,13 +23,28 @@
 
 /* #region Section Styles */
 .logo-text {
-  --shadows: 2px 1px 0px #f012be;
-  --accent: #01ff70;
-  --light: #DDD;
-  color: var(--light);
+  --shadows: 2px 1px 0px var(--pasdark);
+  color: #FFF !important;
   text-shadow: var(--shadows);
-  font-weight: bold; }
+  font-weight: bold;
+  background-color: #fea3aa;
+  animation: logo-bg 20s infinite;
+  padding: 5px;
+  line-height: 15px !important; }
 
+@keyframes logo-bg {
+  0% {
+    background-color: #fea3aa; }
+  20% {
+    background-color: #f8b88b; }
+  40% {
+    background-color: #faf884; }
+  60% {
+    background-color: #baed91; }
+  80% {
+    background-color: #b2cefe; }
+  100% {
+    background-color: #f2a2e8; } }
 .jumbo-bg {
   width: 100%;
   height: 100%;
@@ -68,28 +83,28 @@
   width: 0%; }
 
 .pre.one {
-  animation: anim-show-1 6s linear forwards infinite; }
+  animation: anim-show-1 10s linear forwards infinite; }
 
 .post.one {
-  animation: anim-hide-1 6s linear forwards infinite; }
+  animation: anim-hide-1 10s linear forwards infinite; }
 
 .pre.two {
-  animation: anim-show-2 6s linear forwards infinite; }
+  animation: anim-show-2 10s linear forwards infinite; }
 
 .post.two {
-  animation: anim-hide-2 6s linear forwards infinite; }
+  animation: anim-hide-2 10s linear forwards infinite; }
 
 .pre.three {
-  animation: anim-show-3 6s linear forwards infinite; }
+  animation: anim-show-3 10s linear forwards infinite; }
 
 .post.three {
-  animation: anim-hide-3 6s linear forwards infinite; }
+  animation: anim-hide-3 10s linear forwards infinite; }
 
 .pre.four {
-  animation: anim-show-4 6s linear forwards infinite; }
+  animation: anim-show-4 10s linear forwards infinite; }
 
 .post.four {
-  animation: anim-hide-4 6s linear forwards infinite; }
+  animation: anim-hide-4 10s linear forwards infinite; }
 
 /* SECTION 4/4 */
 @keyframes anim-hide-4 {
@@ -203,6 +218,12 @@
 .modal-header .close {
   padding: 0 !important;
   margin: 1rem 1rem 0rem auto !important; }
+
+.nav-style {
+  background-color: #f8f8f8; }
+
+a {
+  color: #212529 !important; }
 
 /* revert .btn-sm to .btn at SM breakpoint */
 @media (min-width: 576px) {
