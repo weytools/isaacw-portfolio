@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap + Customs -->
-    <link rel="stylesheet" href="styles/custom.css">
     <link rel="stylesheet" href="styles/style.css">
 
     <!-- FontAwesome -->
@@ -37,7 +36,7 @@
           navbar-expand-lg 
           navbar-dark 
           bg-pasdark flex-wrap
-          pb-0 pt-1" id="topNav">
+          pb-0 px-0" id="topNav">
   
           <!-- Brand -->
               <span class="navbar-brand 
@@ -91,14 +90,17 @@
               </div>
           
           <br>
-          <div class="w-100 mt-1">
-              <div class="row d-flex">
-                  <div class="w-25 bg-paspurp pt-1"></div>
-                  <div class="w-25 bg-pasblue"></div>
-                  <div class="w-25 bg-pasyellow"></div>
-                  <div class="w-25 bg-pasgreen"></div>
-                  <!-- <div class="w-15 bg-warning"></div> -->
-              </div>
+          <div class="w-100 mt-2">
+            <div class="colorbar-parent">
+                <div class="pre one bg-pasred"></div>
+                <div class="pre two bg-pasblue"></div>
+                <div class="pre three bg-pasorange"></div>
+                <div class="pre four bg-pasgreen"></div>
+                <div class="post one bg-pasred"></div>
+                <div class="post two bg-pasblue"></div>
+                <div class="post three bg-pasorange"></div>
+                <div class="post four bg-pasgreen"></div>
+            </div>
           </div>
       </nav>
       <!-- nav bottom border color -->
@@ -106,7 +108,7 @@
       
       <!-- SECTION: WELCOME -->
       <section id="welcome">
-          <div class="fake-jumbo jumbo-bg text-cactusdark">
+          <div class="fake-jumbo jumbo-bg ">
               <div class="text-center">
                   <br><br>
                   <h2 class="display-4 font-weight-bold">Hi I'm <span class="highlighter h-m0 h-yellow">Isaac </span><span class="highlighter h-m0 h-yellow">Weymouth,</span></h2>
@@ -208,8 +210,7 @@
                     </p>
                       <p class="small mt-5 text-muted">For a gallery of personal projects, please see my <a href="" data-toggle="modal" data-target="#showroomModal">showroom.</a></p>
                   </div>
-                  <div class="col-2 d-lg-none"></div>
-                  <div class="col-8 col-lg-4 order-lg-1">
+                  <div class="col-8 offset-2 offset-lg-0 col-lg-4 order-lg-1">
                       <img src="images/ukesquare.jpg" class="img-fluid rounded-lg shadow" alt="me playing uke">
                   </div>
                   <div class="col-2 d-lg-none"></div>
