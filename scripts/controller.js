@@ -3,6 +3,7 @@ import getProjects from "./projects.js";
 import * as ani from "./animations.js";
 
 document.addEventListener("DOMContentLoaded", function(){
+    ani.setupListeners();
     ani.introAnimation();
     getProjects();
 
