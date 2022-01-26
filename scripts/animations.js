@@ -11,13 +11,41 @@ var txtHighlights = document.querySelectorAll('.highlighter.h-w0');
 
 export function setupListeners(){
     document.addEventListener('click', () => introComplete(),{once:true})
+    window.onbeforeunload = function () {
+        window.scroll(0,0);
+    }
+}
+
+export function setupObservers(){
+    var observer = new IntersectionObserver(scrollReveal, {threshold: 0.3})
+    var targets = document.querySelectorAll('.reveal');
+    targets.forEach(t => observer.observe(t));
+    var sideSwitch = true;
+    var sidePx = '100px'
+
+    function scrollReveal (entries, observer){
+        entries.forEach(entry=> {
+            if (entry.isIntersecting){
+                console.log(entry);
+                sidePx = sideSwitch?'50px':'-50px'
+                anime({
+                    targets: entry.target,
+                    duration: 500,
+                    opacity: [0,1],
+                    translateX:[sidePx, 0],
+                    easing: 'easeInOutSine'
+                });
+                observer.unobserve(entry.target);
+                sideSwitch = !sideSwitch;
+            }
+        })
+    }
 }
 
 export function introAnimation(){
     var introFadein = anime.timeline({
         duration: 250,
-        easing: 'easeInSine',
-        begin: function(){scroll(0,0);}
+        easing: 'easeInSine'
     });
 
     introFadein

@@ -261,6 +261,16 @@
 a {
   color: #212529 !important; }
 
+p > a {
+  text-decoration: underline; }
+
+p > a:hover {
+  color: #b2cefe;
+  text-decoration: underline; }
+
+.reveal {
+  opacity: 0; }
+
 /* revert .btn-sm to .btn at SM breakpoint */
 @media (min-width: 576px) {
   .btn-sm-grow {

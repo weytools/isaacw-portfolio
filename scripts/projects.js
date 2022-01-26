@@ -1,3 +1,4 @@
+import * as ani from "./animations.js";
 async function getProjects() {
     const request = new Request('./data/projects.json');
   
@@ -5,6 +6,7 @@ async function getProjects() {
     const projectList = await response.json();
   
     populateProjects(projectList);
+    ani.setupObservers();
 }
 
 function populateProjects(projects){
@@ -13,7 +15,7 @@ function populateProjects(projects){
         if (project.isDisabled) continue;
         let projectEl = document.createElement('div');
         // <div class="card shadow mw-lg-45 m-3">
-        projectEl.classList.add("card", "shadow", "mw-lg-45", "m-3");
+        projectEl.classList.add("card", "shadow", "mw-lg-45", "m-3", "reveal");
         let output = `
             <div class="card-body d-flex flex-column">
                 <img src="${project.image}" class="card-img-top border border-secondary rounded mb-3"
