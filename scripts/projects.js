@@ -40,9 +40,9 @@ function populateProjects(projects){
                     </a>
                 </div>
             </div>
-            <div class="card-footer">`
+            <div class="card-footer pill-container">`
             var footerItems = project.footer.split(', ');
-            footerItems.forEach(e=>{output+='<em class="footer-pill small text-monospace">'+e+'</em>'})
+            footerItems.forEach(e=>{output+='<em class="badge footer-pill small text-monospace">'+e+'</em>'})
             output += '</div>'
             
         projectEl.innerHTML = output;
