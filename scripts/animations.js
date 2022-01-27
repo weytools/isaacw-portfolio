@@ -17,7 +17,7 @@ export function setupListeners(){
 }
 
 export function setupObservers(){
-    var observer = new IntersectionObserver(scrollReveal, {threshold: 0.3})
+    var observer = new IntersectionObserver(scrollReveal, {threshold: 0.7})
     var targets = document.querySelectorAll('.reveal');
     targets.forEach(t => observer.observe(t));
     var sideSwitch = true;
@@ -27,14 +27,23 @@ export function setupObservers(){
         entries.forEach(entry=> {
             if (entry.isIntersecting){
                 console.log(entry);
-                sidePx = sideSwitch?'50px':'-50px'
+                sidePx = sideSwitch?'50px':'-50px';
                 anime({
                     targets: entry.target,
                     duration: 500,
                     opacity: [0,1],
                     translateX:[sidePx, 0],
-                    easing: 'easeInOutSine'
+                    easing: 'easeInOutSine',
+                    complete: function(){
+                        var highlighters = entry.target.querySelectorAll('.h-w0');
+                        var t = 50;
+                        highlighters.forEach( h=>{
+                            setTimeout(()=>{h.classList.remove('h-w0')}, t);
+                            t += 50;
+                        });
+                    }
                 });
+
                 observer.unobserve(entry.target);
                 sideSwitch = !sideSwitch;
             }
@@ -49,6 +58,7 @@ export function introAnimation(){
     });
 
     introFadein
+        // greeting and name
         .add({
             targets: txtHi,
             opacity: [0,1],
@@ -79,18 +89,19 @@ export function introAnimation(){
                 txtHighlights[1].classList.remove('h-w0')
             }
         },'-=150')
+        // tagline
         .add({
             targets: txtDesc.querySelectorAll('span'),
-            duration: 75,
+            duration: 100,
             opacity: 1,
-            translateY: ['15px', 0],
-            translateX: ['10px', 0],
-            easing: 'spring(1, 70, 10, 1)',
-            delay: anime.stagger(50, {easing: 'linear'})
+            translateY: ['50px', 0],
+            translateX: ['-5px', 0],
+            easing: 'spring(1, 80, 10, 0)',
+            delay: anime.stagger(150, {easing: 'linear'})
             
         }, '+=300')
         .add({
-            delay: 250,
+            delay: 150,
             begin: function(anim) {
                 introComplete();
             }

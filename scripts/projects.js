@@ -40,10 +40,11 @@ function populateProjects(projects){
                     </a>
                 </div>
             </div>
-            <div class="card-footer">
-                <em>${project.footer}</em>
-            </div>
-        `
+            <div class="card-footer">`
+            var footerItems = project.footer.split(', ');
+            footerItems.forEach(e=>{output+='<em class="footer-pill small text-monospace">'+e+'</em>'})
+            output += '</div>'
+            
         projectEl.innerHTML = output;
         projectContainer.appendChild(projectEl);
     }

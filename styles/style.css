@@ -28,7 +28,7 @@
   text-shadow: var(--shadows);
   font-weight: bold;
   background-color: #fea3aa;
-  animation: logo-bg 20s infinite;
+  animation: logo-bg 10s infinite;
   padding: 5px;
   line-height: 15px !important; }
 
@@ -56,6 +56,34 @@
 .fake-jumbo {
   padding: 0 0 0 0; }
 
+.footer-pill {
+  padding: 0.25rem;
+  margin: 0 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #f2a2e8; }
+
+.footer-pill:first-child {
+  margin-left: 0; }
+
+.footer-pill:last-child {
+  margin-right: 0; }
+
+.nav-btn {
+  padding: 0.75rem 0.75rem;
+  font-size: 80%; }
+
+.nav-btn:first-child {
+  margin-right: 0; }
+
+.nav-btn:last-child {
+  margin-right: 0; }
+
+@media (min-width: 768px) {
+  .nav-btn {
+    font-size: 100%; }
+
+  .nav-btn:first-child {
+    margin-right: 6rem !important; } }
 /* #endregion */
 /*  #region Intro Animation */
 .scroll-block {
