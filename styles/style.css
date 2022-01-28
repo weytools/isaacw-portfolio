@@ -58,7 +58,8 @@
 
 .footer-pill {
   flex: 1 1 auto;
-  border: 1px solid #f2a2e8; }
+  border: 1px solid #f2a2e8;
+  font-weight: 400 !important; }
 
 .pill-container {
   display: flex;
