@@ -26,7 +26,6 @@ export function setupObservers(){
     function scrollReveal (entries, observer){
         entries.forEach(entry=> {
             if (entry.isIntersecting){
-                console.log(entry);
                 sidePx = sideSwitch?'50px':'-50px';
                 anime({
                     targets: entry.target,

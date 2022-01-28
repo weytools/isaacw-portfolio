@@ -97,6 +97,16 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
     font-size: 75%;
   }
 
+  .carousel-item {
+    height: 75vh;
+    text-align: center;
+  }
+  .carousel-caption>p{
+      border-radius: 0.3rem;
+      background-color: $pasdark;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+  }
+
   // .nav-btn:first-child{ margin-right: 0;} 
   // .nav-btn:last-child{ margin-right: 0;}
   @media (min-width: 375px) {

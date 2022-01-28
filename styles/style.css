@@ -70,6 +70,15 @@
   margin: 0.75rem 0.25rem;
   font-size: 75%; }
 
+.carousel-item {
+  height: 75vh;
+  text-align: center; }
+
+.carousel-caption > p {
+  border-radius: 0.3rem;
+  background-color: #383e56;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
 @media (min-width: 375px) {
   .nav-btn {
     margin: 0.75rem 0.75rem; } }
