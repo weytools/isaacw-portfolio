@@ -75,13 +75,8 @@
   100% {
     fill: #f2a2e8;
     stroke: #f2a2e8; } }
-.circle-white {
-  width: 3em;
-  height: 3em;
-  border: 2px dashed #383e56;
-  border-radius: 2em;
-  position: absolute;
-  margin: auto; }
+.mw-container-xl {
+  max-width: 1140px; }
 
 .jumbo-bg {
   width: 100%;
@@ -106,9 +101,11 @@
   justify-content: flex-start; }
 
 .nav-btn {
-  margin: 0.75rem 0.25rem;
-  font-size: 75%;
+  font-size: 75% !important;
   font-weight: 500 !important; }
+  @media (min-width: 768px) {
+    .nav-btn {
+      font-size: inherit; } }
 
 .carousel-item {
   height: 75vh;
@@ -119,15 +116,6 @@
   background-color: #383e56;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
-@media (min-width: 375px) {
-  .nav-btn {
-    margin: 0.75rem 0.75rem; } }
-@media (min-width: 768px) {
-  .nav-btn {
-    font-size: 100%; }
-
-  .nav-btn:first-child {
-    margin-right: 6rem !important; } }
 /* #endregion */
 /*  #region Intro Animation */
 .scroll-block {
