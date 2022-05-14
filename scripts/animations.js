@@ -14,6 +14,8 @@ export function setupListeners(){
     window.onbeforeunload = function () {
         window.scroll(0,0);
     }
+
+    document.addEventListener('scroll', toggleNavShadow)
 }
 
 export function setupObservers(){
@@ -63,7 +65,7 @@ export function introAnimation(){
             opacity: [0,1],
             delay: 200
         })
-    .add({
+        .add({
             targets: txtIm,
             opacity: 1,
             delay: 300
@@ -92,13 +94,21 @@ export function introAnimation(){
         .add({
             targets: txtDesc.querySelectorAll('span'),
             duration: 100,
-            opacity: 1,
-            translateY: ['50px', 0],
-            translateX: ['-5px', 0],
-            easing: 'spring(1, 80, 10, 0)',
-            delay: anime.stagger(150, {easing: 'linear'})
+            // opacity: 1,
+            // translateY: ['50px', 0],
+            // translateX: ['-5px', 0],
+            // easing: 'spring(1, 80, 10, 0)',
+            // delay: anime.stagger(150, {easing: 'linear'})
+            translateY: [50,0],
+            translateX:[25,0],
+            rotate:[90, 0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 800,
+            delay: (el, i) => 300 + 30 * i
             
-        }, '+=300')
+        }, '+=200')
         .add({
             delay: 150,
             begin: function(anim) {
@@ -113,6 +123,16 @@ function introComplete() {
     introText.classList.remove('scaled');
     introWhite.classList.remove('full-h');
     introWhite.classList.add('jumbo-bg');
-    
+}
+
+function toggleNavShadow(){
+    let nav = $('#navbarNav')
+    let navTop = nav.offset().top
+    let headerHeight = nav.prev().outerHeight()
+    if (navTop > headerHeight) {
+        nav.addClass('shadow-md')
+    } else {
+        nav.removeClass('shadow-md')
+    }
 }
 

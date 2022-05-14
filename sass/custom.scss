@@ -1,12 +1,16 @@
 // #region Custom Colors
 // My Pastels
-$pasred:    #fea3aa;
-$pasorange: #f8b88b;
-$pasyellow: #faf884;
-$pasgreen:  #baed91;
-$pasblue:   #b2cefe;
-$paspurp:   #f2a2e8;
-$pasdark:   #383e56;
+$pasred:    #fea3aa;  //	hsl(355, 98%, 82%)
+$pasorange: #f8b88b;  // hsl(25, 89%, 76%)
+$pasyellow: #faf884;  // hsl(59, 92%, 75%)
+$pasgreen:  #baed91;  // hsl(93, 72% 75%)
+$pasblue:   #b2cefe;  // hsl(218, 97%, 85%)
+$paspurp:   #f2a2e8;  // hsl(308, 75%, 79%)
+$pasdark:   #383e56;  // hsl(228, 21%, 28%)
+
+$pasorange-dark: hsl(25, 89%, 31%);  // 
+$pasyellow-dark: hsl(44, 96%, 31%);  // 
+$pasgreen-dark:  hsl(93, 72%, 30%);  // 
 
 $theme-colors: (
     "pasred":       $pasred,
@@ -15,7 +19,10 @@ $theme-colors: (
     "pasgreen":     $pasgreen,
     "pasblue":      $pasblue,
     "paspurp":      $paspurp,
-    "pasdark":      $pasdark
+    "pasdark":      $pasdark,
+    "pasorange-dark":    $pasorange-dark,
+    "pasyellow-dark":    $pasyellow-dark,
+    "pasgreen-dark":     $pasgreen-dark
 );
 // #endregion
 
@@ -64,7 +71,54 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
   100% {background-color: $paspurp;}
   
 }
+
+.weydev-logo {
+  width: 3rem;
+  stroke-width: 0.5rem;
+  stroke-linejoin: round;
+
+  @for $i from 0 to 3 {
+    .bar-#{$i+1} {
+      animation: logo-spectrum 6s #{$i * 250}ms infinite;
+    }
+  }
+}
+
+@keyframes logo-spectrum {
+  0% {
+    fill: $pasred;
+    stroke: $pasred;
+  }
+  20% {
+    fill: $pasorange;
+    stroke: $pasorange;
+  }
+  40% {
+    fill: $pasyellow;
+    stroke: $pasyellow;
+  }
+  60% {
+    fill: $pasgreen;
+    stroke: $pasgreen;
+  }
+  80% {
+    fill: $pasblue;
+    stroke: $pasblue;
+  }
+  100% {
+    fill: $paspurp;
+    stroke: $paspurp;
+  }
   
+}
+.circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed $pasdark;
+  border-radius: 2em;
+  position: absolute;
+  margin: auto;
+}
   .jumbo-bg {
     width: 100%;
     height: 100%;
@@ -96,7 +150,9 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
   .nav-btn{
     margin: 0.75rem 0.25rem;
     font-size: 75%;
+    font-weight: 500 !important;
   }
+
 
   .carousel-item {
     height: 75vh;
@@ -279,6 +335,9 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
   
   .nav-style {
     background-color: #fff;
+  }
+  .shadow-md {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.08);
   }
 
   a {

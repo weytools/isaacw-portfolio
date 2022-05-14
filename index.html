@@ -15,7 +15,7 @@
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap + Customs -->
     <link rel="stylesheet" href="styles/style.css">
@@ -32,8 +32,18 @@
         <!-- SECTION: WELCOME -->
             <div class="intro-whitespace full-h d-flex flex-column">
                 <div class="intro-text text-center scaled mt-5">
-                    <h2 class="display-4 font-weight-bold" id="hi">Hi <span id="im">I'm </span><span class="highlighter h-m0 h-yellow h-w0" id="isaac">Isaac </span><span class="highlighter h-m0 h-w0 h-yellow" id="weymouth">Weymouth,</span></h2>
-                    <p class="lead mb-1 font-weight-normal" id="mydesc"><span>a</span> <span>web</span> <span>&</span> <span>software</span> <span>engineer!</span></p>
+                    <h2 class="display-4 font-weight-bold position-relative" id="hi">Hi
+                        <span id="im">I'm </span>
+                        <span class="highlighter h-m0 h-yellow h-w0" id="isaac">Isaac </span>
+                        <span class="highlighter h-m0 h-w0 h-yellow" id="weymouth">Weymouth,</span>
+                    </h2>
+                    <p class="lead mb-1 font-weight-normal" id="mydesc">
+                        <span>a</span> 
+                        <span>w</span><span>e</span><span>b</span> 
+                        <span>&</span> 
+                        <span>s</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> 
+                        <span>e</span><span>n</span><span>g</span><span>i</span><span>n</span><span>e</span><span>e</span><span>r</span><span>!</span>
+                    </p>
                 </div>
             </div>
 
@@ -47,12 +57,12 @@
                 </div>
             </div>
         </section>
-        <nav class="navbar sticky-top navbar-light nav-style justify-content-center px-0 align-items-baseline py-0" id="navbarNav">
+        <!-- <nav class="navbar sticky-top navbar-light nav-style justify-content-center px-0 align-items-baseline py-0" id="navbarNav">
                 <span class="navbar-brand logo-text nav-btn mr-auto mr-md-5 ml-1 ml-md-0 ">iw</span>
-                <a class="nav-btn border-bottom rounded border-pasgreen" href="Resume-Isaac-Weymouth.pdf" target="_blank"><i class="far fa-file mr-2 text-pasgreen"></i>Resume</a>
-                <a class="nav-btn border-bottom rounded border-pasorange" href="mailto:isweymouth@gmail.com"><i class="far fa-envelope mr-2 text-pasorange"></i>Email</a>
+                <div class="nav-btn"><a class="rounded btn btn-pasgreen" href="Resume-Isaac-Weymouth.pdf" target="_blank"><i class="far fa-file mr-2 text-pasgreen"></i>Resume</a></div>
+                <div class="nav-btn"><a class="rounded btn btn-pasorange" href="mailto:isweymouth@gmail.com"><i class="far fa-envelope mr-2 text-pasorange"></i>Email</a></div>
                 <a class="nav-btn border-bottom rounded border-pasblue" href="tel:207-577-7318"><i class="fas fa-mobile-alt mr-2 text-pasblue"></i>Phone</a>
-                <a class="nav-btn border-bottom rounded border-pasyellow ml-auto ml-md-5 mr-1 mr-md-0" href="https://github.com/weytools/isaacw-portfolio" target="_blank"><i class="fab fa-github mr-2 text-pasyellow"></i><span class="d-none d-lg-inline">View Page </span>Source!</a>
+                <div class="nav-btn"><a class="rounded btn btn-pasyellow ml-auto ml-md-5 mr-1 mr-md-0" href="https://github.com/weytools/isaacw-portfolio" target="_blank"><i class="fab fa-github mr-2 text-pasyellow"></i><span class="d-none d-lg-inline">View Page </span>Source!</a></div>
             <br>
             <div class="w-100 mt-lg-1">
             <div class="colorbar-parent">
@@ -66,7 +76,38 @@
                 <div class="post four bg-pasgreen"></div>
             </div>
             </div>
-        </nav>
+        </nav> -->
+
+        <nav class="navbar sticky-top navbar-light nav-style justify-content-center px-0 align-items-baseline py-0 no-wrap" id="navbarNav">
+            <div class="d-flex flex-row no-wrap w-100 px-5 justify-content-center align-items-center">
+                <div class="navbar-brand mr-4 mr-lg-5">
+                    <svg class="weydev-logo" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 255 138">
+                        <g>
+                            <polygon class="bar-1" points="70 0 0 0 35 89.6 70 0"></polygon>
+                            <polygon class="bar-2" points="100 0 50 128 105 128 155 0 100 0"></polygon>
+                            <polygon class="bar-3" points="185 0 135 128 195 128 245 0 185 0"></polygon>
+                        </g>
+                    </svg>
+                </div>
+                <div class="mr-auto">
+                    <a class="rounded btn btn-sm btn-pasgreen text-pasgreen-dark mr-2 mr-lg-2" href="Resume-Isaac-Weymouth.pdf" target="_blank"><i class="far fa-file mr-2"></i>Resume</a>
+                    <a class="rounded btn btn-sm btn-pasorange text-pasorange-dark " href="mailto:isweymouth@gmail.com"><i class="far fa-envelope mr-2"></i>Email</a>
+                </div>
+                <a class="rounded btn btn-sm btn-pasyellow text-pasyellow-dark" href="https://github.com/weytools/isaacw-portfolio" target="_blank"><i class="fab fa-github mr-2"></i><span class="d-none d-lg-inline">View Page </span>Source!</a>
+            </div>
+        <div class="w-100">
+            <div class="colorbar-parent">
+                <div class="pre one bg-pasred"></div>
+                <div class="pre two bg-pasblue"></div>
+                <div class="pre three bg-pasorange"></div>
+                <div class="pre four bg-pasgreen"></div>
+                <div class="post one bg-pasred"></div>
+                <div class="post two bg-pasblue"></div>
+                <div class="post three bg-pasorange"></div>
+                <div class="post four bg-pasgreen"></div>
+            </div>
+        </div>
+    </nav>
       <!-- SECTION: ABOUT -->
       <section class="clearfix my-5" id="about">
           <div class="container">
