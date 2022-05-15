@@ -14,12 +14,27 @@ function populateProjects(projects){
     for (const project of projects) {
         if (project.isDisabled) continue;
         let projectEl = document.createElement('div');
-        // <div class="card shadow mw-lg-45 m-3">
-        projectEl.classList.add("card", "shadow", "mw-lg-45", "m-3", "reveal");
+        projectEl.classList.add("card", "shadow", "mw-lg-45", "m-45", "reveal", "col-10","col-md-8", "col-lg-4");
+        // source button logic
+        let hasSource = project.buttons[1].isSource
+        var sourceBtn = '';
+        if (hasSource) {
+            sourceBtn = `
+            <a href="${project.buttons[1].ref}" target="_blank" class="btn btn-pasgreen text-pasgreen-dark rounded-circle source-button shadow-sm">
+                <i class="fa-code fas" aria-hidden="true"></i>
+            </a>
+        `
+        } else {
+            sourceBtn = `
+            <a href="${project.buttons[1].ref}" target="_blank" class="btn ${project.buttons[1].isDisabled ? "btn-outline-secondary disabled" : "btn-pasgreen"} text-pasgreen-dark btn-sm btn-sm-grow lh-2 btn-block shadow-sm">
+                ${project.buttons[1].label}
+            </a>
+            `
+        }  
         let output = `
-            <div class="card-body d-flex flex-column">
-                <img src="${project.image}" class="card-img-top border border-secondary rounded mb-3"
-                    alt="${project.imageAlt}">
+            <img src="${project.image}" class="card-img-top border-bottom" alt="${project.imageAlt}">
+            <div class="card-body d-flex flex-column position-relative">
+            ${hasSource?sourceBtn:``}
                 <h5 class="card-title">
                     ${project.title}
                 </h5>
@@ -30,19 +45,16 @@ function populateProjects(projects){
                     ${project.description}
                 </p>
                 <div class="d-flex justify-content-start mt-auto pt-2">
-                    <a class="btn btn-pasblue btn-sm btn-sm-grow" ${project.buttons[0].isModal? `data-toggle="modal" data-target="${project.buttons[0].modalTarget}"`: `href="${project.buttons[0].ref}" target="_blank"`}>
+                    <a class="btn btn-pasblue text-pasblue-dark btn-sm-grow btn-block shadow-sm" ${project.buttons[0].isModal? `data-toggle="modal" data-target="${project.buttons[0].modalTarget}"`: `href="${project.buttons[0].ref}" target="_blank"`}>
                         ${project.buttons[0].label}
                     </a>
                     <span class="px-1"></span>
-                    <a href="${project.buttons[1].ref}" target="_blank"
-                        class="btn ${project.buttons[1].isDisabled ? "btn-outline-secondary disabled" : "btn-pasyellow"} btn-sm btn-sm-grow">
-                        ${project.buttons[1].label}
-                    </a>
+                    ${hasSource?``:sourceBtn}
                 </div>
             </div>
             <div class="card-footer pill-container">`
             var footerItems = project.footer.split(', ');
-            footerItems.forEach(e=>{output+='<em class="badge footer-pill small text-monospace">'+e+'</em>'})
+            footerItems.forEach(e=>{output+='<span class="badge footer-pill">'+e+'</span>'})
             output += '</div>'
             
         projectEl.innerHTML = output;

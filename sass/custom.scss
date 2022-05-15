@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/vendor/rfs";
+
 // #region Custom Colors
 // My Pastels
 $pasred:    #fea3aa;  //	hsl(355, 98%, 82%)
@@ -11,6 +13,7 @@ $pasdark:   #383e56;  // hsl(228, 21%, 28%)
 $pasorange-dark: hsl(25, 89%, 31%);  // 
 $pasyellow-dark: hsl(44, 96%, 31%);  // 
 $pasgreen-dark:  hsl(93, 72%, 30%);  // 
+$pasblue-dark:  hsl(218, 97%, 35%);  // 
 
 $theme-colors: (
     "pasred":       $pasred,
@@ -22,24 +25,55 @@ $theme-colors: (
     "pasdark":      $pasdark,
     "pasorange-dark":    $pasorange-dark,
     "pasyellow-dark":    $pasyellow-dark,
-    "pasgreen-dark":     $pasgreen-dark
+    "pasgreen-dark":     $pasgreen-dark,
+    "pasblue-dark":    $pasblue-dark
 );
 // #endregion
 
 // #region Custom Type
 $display-texts:          1,2,3,4,5;
-$display-text-weight:    400;
+$display-text-weight:    700 !important;
+$weight-utils: 100,200,300,400,500,600,700,800,900;
+@each $w in $weight-utils {
+  .weight-#{$w}{
+    font-weight: $w !important;
+  }
+}
 
 // Overrides
-$display5-weight:             300;
+$display1-weight:             $display-text-weight;
+$display2-weight:             $display-text-weight;
+$display3-weight:             $display-text-weight;
+$display4-weight:             $display-text-weight;
+$display5-weight:             400;
 $display5-size:               2.5rem;
+
+$lead-font-size:              1rem * 1.25;
+$lead-font-weight:            400;
+$spacer: 1rem;
+
+$spacers: (
+  // 0: 0,
+  // 1: ($spacer * .25),
+  // 2: ($spacer * .5),
+  // 3: $spacer,
+  // 4: ($spacer * 1.5),
+  // 5: ($spacer * 3)
+  45: ($spacer * 2),
+  55: ($spacer * 4),
+  6:  ($spacer * 5),
+  7:  ($spacer * 8),
+  8: ($spacer * 10)
+);
+
 
 @each $d in $display-texts {
     .display-#{$d} {
         z-index: 10;
         position: relative;
+        font-weight: $display-text-weight;
         @if $d == 5 {
-            font-size: $display5-size;
+            @include font-size($display5-size);
             font-weight: $display5-weight;
             line-height: 1.2;
         }
@@ -47,7 +81,7 @@ $display5-size:               2.5rem;
 }
 
 
-$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-sans-serif: 'Inter', sans-serif;
 
 // #endregion 
 
@@ -76,6 +110,10 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
   width: 3rem;
   stroke-width: 0.5rem;
   stroke-linejoin: round;
+  
+  @media (min-width: 768px) {
+    width: 4rem;
+  }
 
   @for $i from 0 to 3 {
     .bar-#{$i+1} {
@@ -131,8 +169,8 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 
   .footer-pill {
     flex: 1 1 auto;
-    border: 1px solid $paspurp;
-    font-weight: 400 !important;
+    color: hsl(308deg, 25%, 45%) !important;
+    font-weight: 700 !important;
   }
 
   .pill-container {
@@ -150,8 +188,21 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
     }
   }
 
-
-
+.p-icon {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  position: absolute;
+  right: 0;
+}
+.p-icon-accent {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+}
+p.lead > i {
+  max-width: 20px;
+}
   .carousel-item {
     height: 75vh;
     text-align: center;
@@ -161,7 +212,25 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
       background-color: $pasdark;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
   }
+
+  // #project-container .card {
+  //   &:not(:first-of-type){
+  //     margin-left: 1rem;
+  //   }
+  //   &:not(:last-of-type){
+  //     margin-right: 1rem;
+  //   }
+  // }
     
+  // PROJECTS
+  .source-button {
+    position: absolute;
+    top: -2rem;
+    right: 1rem;    
+    font-size: 1.5rem !important;
+    padding: 1.25rem !important;
+    line-height: 1.25 !important;
+  }
 
   /* #endregion */
   
@@ -193,7 +262,7 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 }
 
 #welcome {
-  border-bottom: 1px solid var(--pasblue);
+  // border-bottom: 1px solid var(--pasblue);
 }
 /* #endregion */
   /* #region ColorBarAnimation */
@@ -321,6 +390,10 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
   .nav-style {
     background-color: #fff;
   }
+  .footer-style {
+    background-color: #f8f8f8;
+    border-top: 1px solid #dee2e6 !important;
+  }
   .shadow-md {
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.08);
   }
@@ -364,6 +437,10 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
     !important; }
   
   /* custom sizes */
+
+  .lh-2{
+    line-height: 2 !important;
+  }
   
   @media (min-width: 992px) {
     .w-lg-60 { width: 60% !important; }

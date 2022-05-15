@@ -1,10 +1,30 @@
 [
     {
         "title": "Animated Infographic",
+        "image": "images/projects/spendsmart-header.png",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Website",
+        "description": "Interactive infographic with attention grabbing custom animations! \nHandcoded based on <a href=\"https://www.emburse.com/assets/pdfs/spendsmart-2022-category-insights-meals.pdf\" target=\"_blank\">static infographic</a> design",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
+                "ref": "https://www.emburse.com/learn/spendsmart-2022"
+            },
+            {
+                "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
+                "ref": "https://github.com/weytools/SpendSmart-2022",
+                "isSource": true
+            }
+
+        ],
+        "footer": "anime.js, ScrollMagic, JavaScript, SVG, Sass"
+    }, 
+    {
+        "title": "Animated Infographic",
         "image": "images/projects/craziest.png",
         "imageAlt" : "project screenshot",
         "subtitle": "Website",
-        "description": "Interactive infographic with attention grabbing custom animations! \nHandcoded based on <a href=\"https://www.emburse.com/assets/pdfs/21.emb.cmk_craziestexpenses_infographic-fa_outlined.pdf\" target=\"_blank\">static infographic</a> design",
+        "description": "Another successful interactive infographic! \nHandcoded based on <a href=\"https://www.emburse.com/assets/pdfs/21.emb.cmk_craziestexpenses_infographic-fa_outlined.pdf\" target=\"_blank\">static infographic</a> design",
         "buttons": [
             {
                 "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
@@ -12,7 +32,8 @@
             },
             {
                 "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
-                "ref": "https://github.com/weytools/Craziest-Expenses-2021"
+                "ref": "https://github.com/weytools/Craziest-Expenses-2021",
+                "isSource": true
             }
 
         ],
@@ -31,7 +52,8 @@
             },
             {
                 "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
-                "ref": "https://github.com/weytools/react-cat-sim"
+                "ref": "https://github.com/weytools/react-cat-sim",
+                "isSource": true
             }
 
         ],
@@ -50,7 +72,8 @@
             },
             {
                 "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
-                "ref": "https://github.com/weytools/ROI-Calculator"
+                "ref": "https://github.com/weytools/ROI-Calculator",
+                "isSource": true
             }
 
         ],
@@ -70,7 +93,8 @@
             },
             {
                 "label": "<i class=\"fas fa-video mr-2\"></i>Training Video",
-                "ref": "https://youtu.be/7Pq6wX2p1J8"
+                "ref": "https://youtu.be/7Pq6wX2p1J8",
+                "isSource": false
             }
 
         ],
@@ -90,7 +114,8 @@
             },
             {
                 "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
-                "ref": "https://github.com/weytools/Lane-Pack-Barcoder"
+                "ref": "https://github.com/weytools/Lane-Pack-Barcoder",
+                "isSource": true
             }
 
         ],
@@ -110,10 +135,12 @@
             {
                 "label": "<i class=\"far fa-times-circle mr-2\"></i>Private source",
                 "ref": "#",
+                "isSource": false,
                 "isDisabled": true
             }
 
         ],
-        "footer": "ShopKeep, Authorize.Net, HTML, CSS"
+        "footer": "ShopKeep, Authorize.Net, HTML, CSS",
+        "isDisabled": true
     }
 ]

@@ -71,25 +71,21 @@ export function introAnimation(){
             delay: 300
         })
         .add({
-            targets: txtIsaac,
+            targets: [txtIsaac, txtWey],
             opacity: 1,
-            delay: 50
+            delay: 50,
+            duration: 500,
         })
         .add({
             begin: function(anim) {
                 txtHighlights[0].classList.remove('h-w0')
             }
         },'-=150')
-        .add({
-            targets: txtWey,
-            opacity: 1,
-            delay: 50
-        })
         .add({ 
             begin: function(anim) {
                 txtHighlights[1].classList.remove('h-w0')
             }
-        },'-=150')
+        },'-=200')
         // tagline
         .add({
             targets: txtDesc.querySelectorAll('span'),
@@ -129,7 +125,7 @@ function toggleNavShadow(){
     let nav = $('#navbarNav')
     let navTop = nav.offset().top
     let headerHeight = nav.prev().outerHeight()
-    if (navTop > headerHeight) {
+    if (navTop > headerHeight+5) {
         nav.addClass('shadow-md')
     } else {
         nav.removeClass('shadow-md')
