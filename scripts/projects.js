@@ -14,19 +14,19 @@ function populateProjects(projects){
     for (const project of projects) {
         if (project.isDisabled) continue;
         let projectEl = document.createElement('div');
-        projectEl.classList.add("card", "shadow", "mw-lg-45", "m-45", "reveal", "col-10","col-md-8", "col-lg-4");
+        projectEl.classList.add("card", "shadow", "mw-lg-45", "mx-45", "my-lg-5", "my-45", "reveal", "col-11","col-md-8", "col-lg-5");
         // source button logic
         let hasSource = project.buttons[1].isSource
         var sourceBtn = '';
         if (hasSource) {
             sourceBtn = `
-            <a href="${project.buttons[1].ref}" target="_blank" title="View source code" class="btn btn-pasgreen text-pasgreen-dark rounded-lg source-button shadow-lg">
+            <a href="${project.buttons[1].ref}" target="_blank" title="View source code" class="btn btn-pasgreen text-pasgreen-dark rounded-lg source-button shadow-md">
                 <i class="fa-code fas" aria-hidden="true"></i> Source
             </a>
         `
         } else {
             sourceBtn = `
-            <a href="${project.buttons[1].ref}" target="_blank" class="btn ${project.buttons[1].isDisabled ? "btn-outline-secondary disabled" : "btn-pasgreen"} text-pasgreen-dark btn-sm btn-sm-grow lh-2 btn-block shadow-sm">
+            <a href="${project.buttons[1].ref}" target="_blank" class="btn ${project.buttons[1].isDisabled ? "btn-outline-secondary disabled" : "btn-pasgreen"} text-pasgreen-dark lh-2 btn-block shadow-sm">
                 ${project.buttons[1].label}
             </a>
             `
@@ -45,7 +45,7 @@ function populateProjects(projects){
                     ${project.description}
                 </p>
                 <div class="d-flex justify-content-start mt-auto pt-2">
-                    <a class="btn btn-pasblue text-pasblue-dark btn-sm-grow btn-block shadow-sm" ${project.buttons[0].isModal? `data-toggle="modal" data-target="${project.buttons[0].modalTarget}"`: `href="${project.buttons[0].ref}" target="_blank"`}>
+                    <a class="btn btn-pasblue text-pasblue-dark btn-block shadow-sm lh-2" ${project.buttons[0].isModal? `data-toggle="modal" data-target="${project.buttons[0].modalTarget}"`: `href="${project.buttons[0].ref}" target="_blank"`}>
                         ${project.buttons[0].label}
                     </a>
                     <span class="px-1"></span>
