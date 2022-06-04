@@ -40,6 +40,26 @@
         "footer": "anime.js, currency.js, JavaScript, SVG, CSS"
     }, 
     {
+        "title": "ROI Calculator v2",
+        "image": "images/projects/ap-roi-calc.png",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Website",
+        "description": "New variant of my <a href=\"https://www.emburse.com/solutions/roi-calculator\" target=\"_blank\">high conversion ROI calculator</a>. Collaboration with demand gen team to create an engaging form. Captures user data for nurture campaigns and sales funnel",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
+                "ref": "https://www.emburse.com/solutions/ap-roi-calculator"
+            },
+            {
+                "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
+                "ref": "https://github.com/weytools/ROI-Calculator",
+                "isSource": true
+            }
+
+        ],
+        "footer": "jQuery, Marketo, API, CSS"
+    }, 
+    {
         "title": "Cat Simulator",
         "image": "images/react-v2-small.png",
         "imageAlt" : "project screenshot",
@@ -77,7 +97,8 @@
             }
 
         ],
-        "footer": "jQuery, Marketo, API, CSS"
+        "footer": "jQuery, Marketo, API, CSS",
+        "isDisabled": true
     }, 
     {
         "title": "Product Database & UI",

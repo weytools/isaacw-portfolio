@@ -20,8 +20,8 @@ function populateProjects(projects){
         var sourceBtn = '';
         if (hasSource) {
             sourceBtn = `
-            <a href="${project.buttons[1].ref}" target="_blank" class="btn btn-pasgreen text-pasgreen-dark rounded-circle source-button shadow-sm">
-                <i class="fa-code fas" aria-hidden="true"></i>
+            <a href="${project.buttons[1].ref}" target="_blank" title="View source code" class="btn btn-pasgreen text-pasgreen-dark rounded-lg source-button shadow-lg">
+                <i class="fa-code fas" aria-hidden="true"></i> Source
             </a>
         `
         } else {
