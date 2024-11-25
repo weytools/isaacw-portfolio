@@ -1,25 +1,66 @@
 [
     {
-        "title": "Animated Infographic",
+        "title": "Spend Optimization Grader",
+        "image": "images/projects/spend-op-preview.jpg",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Interactive Quiz",
+        "description": "React quiz that asseses your companies current expense management automation. Fully animated, featuring easter egg interactions to encourage longer engagement. Collaborated on design with internal graphics department. <br> <em>Bypass the initial form with <a href=\"https://spend-op-grader.vercel.app/#/questions/expense/data/0\" target=\"_blank\">this direct link.</a></em>",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
+                "ref": "https://spend-op-grader.vercel.app/"
+            }
+
+        ],
+        "footer": "React, Framer Motion, Sass, Illustrator"
+    }, 
+    {
+        "title": "Spend Management Trends Report",
+        "image": "images/projects/spend-trends-report.png",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Animated Infographic",
+        "description": "Based on a static infographic, this interactive version was hand-coded to match the design. Features animated graphs and charts as reusable components. Was intended to become an annual release.",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
+                "ref": "https://www.emburse.com/insights/2023-spend-management-trends-report"
+            }
+
+        ],
+        "footer": "React, Framer Motion, SVG, Sass"
+    }, 
+    {
+        "title": "Emburse Spend ROI Calculator",
+        "image": "images/projects/spend-roi.png",
+        "imageAlt" : "project screenshot",
+        "subtitle": "Calculator",
+        "description": "Entirely original design based on a manual spreadsheet from the sales team used during the sales process. Highly visible page with <strong>huge SEO strength</strong>, it currently ranks 15th in Google search for 'ROI Calculator' (2024).",
+        "buttons": [
+            {
+                "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
+                "ref": "https://www.emburse.com/products/spend/return-on-investment-calculator"
+            }
+
+        ],
+        "footer": "React, CSS Animations, Sass"
+    }, 
+    {
+        "title": "SpendSmart Category Insights",
         "image": "images/projects/spendsmart-header.png",
         "imageAlt" : "project screenshot",
-        "subtitle": "Website",
-        "description": "Interactive infographic with attention grabbing custom animations! \nHandcoded based on <a href=\"https://www.emburse.com/assets/pdfs/spendsmart-2022-category-insights-meals.pdf\" target=\"_blank\">static infographic</a> design",
+        "subtitle": "Animated Infographic",
+        "description": "Interactive infographic with attention grabbing custom animations! Based on a static infographic, I carved out individual vector elements and animated them to create a more engaging experience.",
         "buttons": [
             {
                 "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
                 "ref": "https://www.emburse.com/learn/spendsmart-2022"
-            },
-            {
-                "label": "<i class=\"fab fa-github mr-2\"></i>Source code",
-                "ref": "https://github.com/weytools/SpendSmart-2022",
-                "isSource": true
             }
 
         ],
         "footer": "anime.js, ScrollMagic, JavaScript, SVG, Sass"
     }, 
     {
+        "isDisabled": true,
         "title": "Animated Infographic",
         "image": "images/projects/craziest.png",
         "imageAlt" : "project screenshot",
@@ -40,11 +81,11 @@
         "footer": "anime.js, currency.js, JavaScript, SVG, CSS"
     }, 
     {
-        "title": "ROI Calculator v2",
+        "title": "AP Automation ROI Calculator",
         "image": "images/projects/ap-roi-calc.png",
         "imageAlt" : "project screenshot",
-        "subtitle": "Website",
-        "description": "New variant of my <a href=\"https://www.emburse.com/solutions/roi-calculator\" target=\"_blank\">high conversion ROI calculator</a>. Collaboration with demand gen team to create an engaging form. Captures user data for nurture campaigns and sales funnel",
+        "subtitle": "Calculator",
+        "description": "Collaboration with demand gen team to create an engaging form. Captures user data for nurture campaigns and sales funnel",
         "buttons": [
             {
                 "label": "<i class=\"fas fa-globe mr-2\"></i>View site",
@@ -57,7 +98,7 @@
             }
 
         ],
-        "footer": "jQuery, Marketo, API, CSS"
+        "footer": "jQuery, Marketo, CSS"
     }, 
     {
         "title": "Cat Simulator",

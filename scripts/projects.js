@@ -16,7 +16,7 @@ function populateProjects(projects){
         let projectEl = document.createElement('div');
         projectEl.classList.add("card", "shadow", "mw-lg-45", "mx-45", "my-lg-5", "my-45", "reveal", "col-11","col-md-8", "col-lg-5");
         // source button logic
-        let hasSource = project.buttons[1].isSource
+        let hasSource = project.buttons[1] && project.buttons[1].isSource
         var sourceBtn = '';
         if (hasSource) {
             sourceBtn = `
@@ -24,7 +24,7 @@ function populateProjects(projects){
                 <i class="fa-code fas" aria-hidden="true"></i> Source
             </a>
         `
-        } else {
+        } else if (project.buttons[1]){
             sourceBtn = `
             <a href="${project.buttons[1].ref}" target="_blank" class="btn ${project.buttons[1].isDisabled ? "btn-outline-secondary disabled" : "btn-pasgreen"} text-pasgreen-dark lh-2 btn-block shadow-sm">
                 ${project.buttons[1].label}

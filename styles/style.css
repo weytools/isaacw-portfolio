@@ -394,10 +394,10 @@ p.lead > i {
 a {
   color: #212529 !important; }
 
-p > a {
+p > a, p > em > a {
   text-decoration: underline; }
 
-p > a:hover {
+p > a:hover, p > em > a:hover {
   color: #b2cefe !important;
   text-decoration: underline; }
 
